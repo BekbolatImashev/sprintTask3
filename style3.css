@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+input {
+    width: 150px;
+    padding: 5px;
+}
+select {
+    padding: 5px;
+}

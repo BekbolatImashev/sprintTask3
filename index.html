@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Конвертер валют</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+
+</head>
+<body>
+    <body>
+        <div class="main">
+            <h3>Если вы выбрали тенге то:</h3>
+            <div class="container">
+                <div>
+                    <label>Введите сумму:</label><br>
+                    <input type="number" id="amount1">
+                    <select id="currency1" onchange="convert(1)">
+                        <option value="KZT">KZT</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+                </div>
+                <div>
+                    <label>KZT (tenge)</label><br>
+                    <input type="text" id="kzt1" readonly>
+                </div>
+                <div>
+                    <label>USD (dollar)</label><br>
+                    <input type="text" id="usd1" readonly>
+                </div>
+                <div>
+                    <label>EUR (euro)</label><br>
+                    <input type="text" id="eur1" readonly>
+                </div>
+            </div>
+            
+            <h3>Если вы выбрали доллар то:</h3>
+            <div class="container">
+                <div>
+                    <label>Введите сумму:</label><br>
+                    <input type="number" id="amount2">
+                    <select id="currency2" onchange="convert(2)">
+                        <option value="USD">USD</option>
+                        <option value="KZT">KZT</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+                </div>
+                <div>
+                    <label>KZT (tenge)</label><br>
+                    <input type="text" id="kzt2" readonly>
+                </div>
+                <div>
+                    <label>USD (dollar)</label><br>
+                    <input type="text" id="usd2" readonly>
+                </div>
+                <div>
+                    <label>EUR (euro)</label><br>
+                    <input type="text" id="eur2" readonly>
+                </div>
+            </div>
+    
+            <h3>Если вы выбрали евро то:</h3>
+            <div class="container">
+                <div>
+                    <label>Введите сумму:</label><br>
+                    <input type="number" id="amount3">
+                    <select id="currency3" onchange="convert(3)">
+                        <option value="EUR">EUR</option>
+                        <option value="KZT">KZT</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </div>
+                <div>
+                    <label>KZT (tenge)</label><br>
+                    <input type="text" id="kzt3" readonly>
+                </div>
+                <div>
+                    <label>USD (dollar)</label><br>
+                    <input type="text" id="usd3" readonly>
+                </div>
+                <div>
+                    <label>EUR (euro)</label><br>
+                    <input type="text" id="eur3" readonly>
+                </div>
+            </div>
+        </div>
+        <script src="converter.js"></script>
+    </body>
+
+</html>
